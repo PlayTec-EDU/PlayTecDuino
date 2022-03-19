@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="TemplateData/style.css">
   </head>
   <body>
-    <div id="nav" >
+    <div id="top"> 
       <img src="http://playtecedu.com/plugins/blocklyduino/media/playtecrobot.gif" width="70" height="60">
       <img src="http://playtecedu.com/plugins/blocklyduino/logo.png" width="300" height="60">
     </div>
@@ -27,16 +27,16 @@
     </div>
     <div id="unity-footer">
       <div id="unity-fullscreen-button"></div>
-      <div id="unity-build-title">PlayTecEdu</div>
+      <div id="unity-build-title">PlayTecEDU</div>
     </div>
   </div>
     <script>
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/SimuladorWEB2.loader.js";
+      var loaderUrl = buildUrl + "/PlaytecDuinoSinBug.loader.js";
       var config = {
-        dataUrl: buildUrl + "/SimuladorWEB2.data",
-        frameworkUrl: buildUrl + "/SimuladorWEB2.framework.js",
-        codeUrl: buildUrl + "/SimuladorWEB2.wasm",
+        dataUrl: buildUrl + "/PlaytecDuinoSinBug.data",
+        frameworkUrl: buildUrl + "/PlaytecDuinoSinBug.framework.js",
+        codeUrl: buildUrl + "/PlaytecDuinoSinBug.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "PlaytecEdu",
@@ -60,33 +60,9 @@
           mobileWarning.style.display = "none";
         }, 5000);
   
-      }else if (screen.width <= 480 && screen.height <= 854){
-        canvas.style.width = "480px";
-        canvas.style.height = "774px"; 
-     
-      }else if(screen.width <=960 && screen.height <=540){
+      } else {
         canvas.style.width = "960px";
-        canvas.style.height = "460px";
-   
-      }else if(screen.width <= 1024 && screen.height <=640){
-        canvas.style.width = "1024px";
-        canvas.style.height = "560px";
-
-      }else if(screen.width <=1280 && screen.height <=720){ 
-        canvas.style.width = "1270px"; 
-        canvas.style.height = "640px"; 
-
-      }else if(screen.width <= 1366 && screen.height <=768){
-        canvas.style.width = "1366px";
-        canvas.style.height = "688px";
-
-      }else if(screen.width <= 1920 && screen.height <=1080){
-        canvas.style.width = "1920px";
-        canvas.style.height = "1000px";
-        
-      }else {
-        canvas.style.width = w;
-        canvas.style.height = h;
+        canvas.style.height = "600px";
       }
       loadingBar.style.display = "block";
       var script = document.createElement("script");
