@@ -1,4 +1,4 @@
-body { padding: 0; margin: 0 ;background-color: #54a0ff }
+body { padding: 0; margin: 0 ;background-color: #d1d6db }
 #top { padding: 15px; margin: 0; background-color: #fff } 
 #unity-container { position: absolute }
 #unity-container.unity-desktop { left: 50%; top: 70%; transform: translate(-50%, -50%) }
