@@ -1,4 +1,4 @@
-# PlayTecDuinoGame 🤖
+# PlayTecDuino 🤖
 ## https://playtec-edu.github.io/PlayTecDuino/
 
 ## Vista Previa 
